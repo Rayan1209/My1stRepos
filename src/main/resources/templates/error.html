@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+xmlns:th="https://www.thymleaf.org/">
+<head>
+
+  <title>App Error</title>
+</head>
+<body>
+<h2>An Error has occured !</h2>
+<div class="container">
+  <table border="1dp">
+    <tr>
+      <td>Date </td>
+      <td th:text="${timestamp}"></td>
+    </tr>
+    <tr>
+      <td>Status </td>
+      <td th:text="${status}"></td>
+    </tr>
+    <tr>
+      <td>Error Details </td>
+      <td th:text="${error}"></td>
+    </tr>
+    <tr>
+      <td>Message </td>
+      <td th:text="${message}"></td>
+    </tr>
+    <tr>
+      <td>Path </td>
+      <td th:text="${path}"></td>
+    </tr>
+
+
+    <tr>
+      <td>Title  </td>
+      <td th:text="${Title}"></td>
+    </tr>
+    <tr>
+      <td>Trace </td>
+      <td th:text="${trace}"></td>
+    </tr>
+  </table>
+
+</div>
+</body>
+</html>
